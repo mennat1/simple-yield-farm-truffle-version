@@ -1,0 +1,25 @@
+{
+  "name": "truffle_version",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@openzeppelin/contracts": "^4.4.1",
+    "@openzeppelin/test-helpers": "^0.5.15",
+    "@soldoc/soldoc": "^0.4.3",
+    "ethereum-waffle": "^3.4.0"
+  },
+  "dependencies": {
+    "chai": "^4.3.4",
+    "solc": "^0.8.11"
+  }
+}
