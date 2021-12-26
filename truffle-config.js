@@ -6,7 +6,7 @@ const { ALCHEMY_KEY } = process.env;
 
 
 module.exports = {
-  contracts_build_directory: path.join(__dirname, "client/src/contracts"),
+  contracts_build_directory: path.join(__dirname, "build"),
 
   networks: {
   
