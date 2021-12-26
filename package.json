@@ -15,7 +15,6 @@
   "devDependencies": {
     "@openzeppelin/contracts": "^4.4.1",
     "@openzeppelin/test-helpers": "^0.5.15",
-    "@soldoc/soldoc": "^0.4.3",
     "ethereum-waffle": "^3.4.0"
   },
   "dependencies": {

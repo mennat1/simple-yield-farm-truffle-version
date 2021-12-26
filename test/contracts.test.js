@@ -82,7 +82,7 @@ contract("Escrow", (accounts) => {
 
 
     expect(Number(daiBalanceBeforeStaking))
-        .to.eq(Number(daiBalanceAfterStaking) + Number(web3.utils.toWei(String(stakeAmount))))
+        .to.eq(Number(BigInt(daiBalanceAfterStaking) + BigInt(web3.utils.toWei(String(stakeAmount)))))
 
     expect(Number(await escrow.stakingBalance(acc0))).to.eq(Number(web3.utils.toWei(String(stakeAmount))))
     
@@ -235,7 +235,7 @@ contract("Escrow", (accounts) => {
     let daiBalanceAfterUnStaking = await mockDAI.balanceOf(acc0)
     console.log("daiBalanceAfterUnStaking = ", web3.utils.fromWei(daiBalanceAfterUnStaking))
     expect(Number(daiBalanceAfterUnStaking))
-        .to.eq(Number(daiBalanceBeforeUnStaking) + Number((amountToUnstake)))
+        .to.eq(Number(BigInt(daiBalanceBeforeUnStaking) + BigInt((amountToUnstake))))
     
     stakingBalance = await escrow.stakingBalance(acc0)
     expect(Number(stakingBalance)).to.eq(0);
